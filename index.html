@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-       India Life Care
+        India Life Care
     </title>
     <link rel="icon" href="./Inidalifecare.png">
     <link href="https://demo.tailadmin.com/style.css" rel="stylesheet">
@@ -20,13 +20,13 @@
             <div class="no-scrollbar overflow-y-auto py-20">
                 <div class="mx-auto w-full max-w-[600px]">
                     <div class="text-center">
-                        <h1 class="mb-2.5 text-3xl font-black text-black dark:text-white lg:text-4xl xl:text-[50px] xl:leading-[60px]">
+                        <h1
+                            class="mb-2.5 text-3xl font-black text-black dark:text-white lg:text-4xl xl:text-[50px] xl:leading-[60px]">
                             Coming Soon
                         </h1>
 
                         <p class="font-medium">
-                            Our website is currently under construction, enter your email id
-                            to get latest updates and notifications about the website.
+                            🚀 Big News Unveiling Soon! IndiaLifeCare is gearing up to revolutionize your healthcare journey. Imagine quality health services at your fingertips! The countdown begins for a healthier, happier you. Stay tuned! 
                         </p>
                     </div>
                 </div>
@@ -38,8 +38,10 @@
                         <div class="mb-3 flex items-center gap-2">
                             <template x-for="(day, index) in daysArray" :key="index">
                                 <div x-show="day.visible" class="timer-box relative overflow-hidden rounded-lg">
-                                    <span class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]" x-text="day.value">
-                                        
+                                    <span
+                                        class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]"
+                                        x-text="day.value">
+
                                     </span>
 
                                     <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20"
@@ -47,15 +49,16 @@
                                 </div>
                             </template>
                             <div x-show="day.visible" class="timer-box relative overflow-hidden rounded-lg">
-                                <span class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]"  x-text="day.value">2</span>
+                                <span class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]" x-text="day.value" id="daysFirstDigit">0</span>
                                 <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20" :style="{height: calcOverlayHeight()}" style="height: 81.7457%;"></span>
                             </div>
                             <div x-show="day.visible" class="timer-box relative overflow-hidden rounded-lg">
-                                <span class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]" x-text="day.value">9</span>
-                                <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20" :style="{height: calcOverlayHeight()}" style="height: 81.7457%;"></span>
+                                <span class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]" x-text="day.value" id="daysSecondDigit">0</span>
+                                <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20"
+                                    :style="{height: calcOverlayHeight()}" style="height: 81.7457%;"></span>
                             </div>
                             <div x-show="day.visible" class="timer-box relative overflow-hidden rounded-lg">
-                                <span class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]" x-text="day.value">8</span>
+                                <span class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]" x-text="day.value" id="daysThirdDigit">0</span>
                                 <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20" :style="{height: calcOverlayHeight()}" style="height: 81.7457%;"></span>
                             </div>
                         </div>
@@ -79,7 +82,7 @@
                             <div x-show="hour.visible" class="timer-box relative overflow-hidden rounded-lg">
                                 <span
                                     class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]"
-                                    x-text="hour.value">0</span>
+                                    x-text="hour.value" id="hoursFirstDigit">0</span>
 
                                 <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20"
                                     :style="{height: calcOverlayHeight()}" style="height: 81.7457%;"></span>
@@ -87,7 +90,7 @@
                             <div x-show="hour.visible" class="timer-box relative overflow-hidden rounded-lg">
                                 <span
                                     class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]"
-                                    x-text="hour.value">8</span>
+                                    x-text="hour.value" id="hoursSecondDigit">0</span>
 
                                 <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20"
                                     :style="{height: calcOverlayHeight()}" style="height: 81.7457%;"></span>
@@ -113,7 +116,7 @@
                             <div x-show="minute.visible" class="timer-box relative overflow-hidden rounded-lg">
                                 <span
                                     class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]"
-                                    x-text="minute.value">5</span>
+                                    x-text="minute.value" id="minutesFirstDigit">0</span>
 
                                 <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20"
                                     :style="{height: calcOverlayHeight()}" style="height: 81.7457%;"></span>
@@ -121,7 +124,7 @@
                             <div x-show="minute.visible" class="timer-box relative overflow-hidden rounded-lg">
                                 <span
                                     class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]"
-                                    x-text="minute.value">5</span>
+                                    x-text="minute.value" id="minutesSecondDigit">0</span>
 
                                 <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20"
                                     :style="{height: calcOverlayHeight()}" style="height: 81.7457%;"></span>
@@ -147,7 +150,7 @@
                             <div x-show="second.visible" class="timer-box relative overflow-hidden rounded-lg">
                                 <span
                                     class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]"
-                                    x-text="second.value">1</span>
+                                    x-text="second.value" id="secondsFirstDigit">0</span>
 
                                 <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20"
                                     :style="{height: calcOverlayHeight()}" style="height: 81.7457%;"></span>
@@ -155,7 +158,7 @@
                             <div x-show="second.visible" class="timer-box relative overflow-hidden rounded-lg">
                                 <span
                                     class="flex h-17.5 min-w-[56px] items-center justify-center rounded-lg bg-black px-3 text-xl font-black leading-[1.35] text-white dark:bg-boxdark lg:text-3xl xl:text-[40px]"
-                                    x-text="second.value">9</span>
+                                    x-text="second.value" id="secondsSecondDigit">0</span>
 
                                 <span class="absolute bottom-0 left-0 block w-full bg-[#000]/20"
                                     :style="{height: calcOverlayHeight()}" style="height: 81.7457%;"></span>
@@ -171,8 +174,11 @@
                 <div class="mx-auto mt-12.5 w-full max-w-[580px]">
                     <form>
                         <div class="flex">
-                            <input type="email" name="email" id="email" placeholder="Enter your email" class="placeholder:text-dark-4 w-full rounded-l-md border-[1.5px] border-r-0 border-stroke px-5.5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary" required>
-                            <button type="submit" class="inline-flex justify-center rounded-r-md bg-primary px-4 py-3 font-medium text-white duration-200 ease-out hover:bg-opacity-90 sm:px-7.5">
+                            <input type="email" name="email" id="email" placeholder="Enter your email"
+                                class="placeholder:text-dark-4 w-full rounded-l-md border-[1.5px] border-r-0 border-stroke px-5.5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                                required>
+                            <button type="submit"
+                                class="inline-flex justify-center rounded-r-md bg-primary px-4 py-3 font-medium text-white duration-200 ease-out hover:bg-opacity-90 sm:px-7.5">
                                 Subscribe
                             </button>
                         </div>
@@ -272,32 +278,91 @@
             </div>
         </div>
     </section>
-<script>
+    <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-        
+        var countDownDate = new Date("Jun 10, 2024 12:00:00").getTime();
+
         // Update the count down every 1 second
-        var countdownfunction = setInterval(function() {
-        
-          // Get todays date and time
-          var now = new Date().getTime();
-          
-          // Find the distance between now an the count down date
-          var distance = countDownDate - now;
-          
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-          
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(countdownfunction);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
+        var countdownfunction = setInterval(function () {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Days management 
+            let daysFirstDigit = document.getElementById('daysFirstDigit');
+            let daysSecondDigit = document.getElementById('daysSecondDigit');
+            let daysThirdDigit = document.getElementById('daysThirdDigit');
+
+            daysFirstDigit&& (daysFirstDigit.innerText = showNumber(days,0,'days'));
+            daysSecondDigit && (daysSecondDigit.innerText = showNumber(days,1,'days'));
+            daysThirdDigit && (daysThirdDigit.innerText = showNumber(days,2,'days'));
+
+            // Hours management 
+
+            let hoursFirstDigit = document.getElementById('hoursFirstDigit');
+            let hoursSecondDigit = document.getElementById('hoursSecondDigit');
+            hoursFirstDigit&& (hoursFirstDigit.innerText = showNumber(hours,0,'hours'));
+            hoursSecondDigit&& (hoursSecondDigit.innerText = showNumber(hours,1,'hours'));
+
+            // Minutes Management 
+
+            let minutesFirstDigit = document.getElementById('minutesFirstDigit');
+            let minutesSecondDigit = document.getElementById('minutesSecondDigit');
+
+            minutesFirstDigit&& (minutesFirstDigit.innerText = showNumber(minutes,0,'minutes'));
+            minutesSecondDigit&& (minutesSecondDigit.innerText = showNumber(minutes,1,'minutes'));
+
+            // Seconds Management
+            let secondsFirstDigit = document.getElementById('secondsFirstDigit');
+            let secondsSecondDigit = document.getElementById('secondsSecondDigit');
+            secondsFirstDigit&& (secondsFirstDigit.innerText = showNumber(seconds,0,'seconds'));
+            secondsSecondDigit&& (secondsSecondDigit.innerText = showNumber(seconds,1,'seconds'));
+
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(countdownfunction);
+                // document.getElementById("demo").innerHTML = "EXPIRED";
+            }
         }, 1000);
-</script>
+
+    function showNumber(number, index, type) {
+        let strArray = number.toString().split('');
+        switch (type) {
+            case 'days':
+                if (100 > number) {
+                    strArray.unshift('0')
+                }
+                break;
+            case 'hours':
+                if (10 > number) {
+                    strArray.unshift('0')
+                }
+                break;
+            case 'minutes':
+                if (10 > number) {
+                    strArray.unshift('0')
+                }
+                break;
+            case 'seconds':
+                if (10 > number) {
+                    strArray.unshift('0')
+                }
+                break;
+        }
+
+        return strArray[index]
+    }
+    </script>
 
 </body>
 
