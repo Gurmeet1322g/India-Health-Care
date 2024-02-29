@@ -57,6 +57,12 @@ function readMore(componentId,buttonId){
 }
 
 
+function toggleHaburge(){
+  let g = document.querySelector("#navbar");
+      g.classList.toggle("navbar-active");
+}
+
+
 window.onload = ()=>{
     toggleVissionTabs(0)
 }
