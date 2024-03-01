@@ -1,0 +1,31 @@
+@keyframes flipAndRotateAnimation {
+    0% {
+      transform: scaleX(1) rotate(0deg);
+    }
+    100% {
+      transform: scaleX(-1) rotate(0deg);
+    }
+    /* 100% {
+      transform: scaleX(-1) rotate(-360deg);
+    } */
+}
+
+.rotate-with-animation {
+    animation: flipAndRotateAnimation 10s linear infinite;
+  }
+
+.read-more{
+    display: none;
+}
+
+.active .read-more{
+    display: block;
+}
+
+.active .read-less{
+    display: none;
+}
+
+.active .read-more-btn {
+    transform: rotate(180deg);
+}

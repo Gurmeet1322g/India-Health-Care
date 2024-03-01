@@ -56,6 +56,10 @@ function readMore(componentId,buttonId){
     }
 }
 
+function readMoreWithRoundBuntton(id){
+  document.getElementById(id).classList.toggle('active')
+}
+
 
 function toggleHaburge(){
   let g = document.querySelector("#navbar");
